@@ -98,7 +98,7 @@ const products = [
       'Reduce agent workload by 50%',
       'Increase first-contact resolution rates'
     ],
-    image: '/assets/img/th-1/ai-chatbot-demo.jpg',
+    image: '/ourproducts/ai-chat-bot-image.jpg',
     screenshots: [
       '/assets/img/th-1/chatbot-dashboard.jpg',
       '/assets/img/th-1/chatbot-analytics.jpg',
@@ -216,6 +216,7 @@ const products = [
   {
     id: 2,
     name: 'Predictive Analytics Engine',
+    tagline: 'Transform your data into actionable foresight with AI-powered predictions',
     description: 'A robust AI tool that analyzes historical data to forecast trends, customer behavior, sales patterns, and potential risks, helping businesses make smarter, data-backed decisions.',
     longDescription: 'Our Predictive Analytics Engine leverages machine learning algorithms to analyze historical data and generate accurate forecasts. It helps businesses anticipate market trends, understand customer behavior, and make smarter, data-backed decisions. The engine continuously learns from new data, improving its predictions over time and providing actionable insights to drive business growth and efficiency.',
     icon: '/assets/img/th-1/service-icon-orange-2.svg',
@@ -236,7 +237,7 @@ const products = [
       'Reduce operational costs',
       'Enhance strategic planning'
     ],
-    image: '/assets/img/th-1/analytics-dashboard.jpg',
+    image: '/ourproducts/Predictive Analytics Engine.jpg',
     useCases: [
       'Demand forecasting',
       'Customer churn prediction',
@@ -248,6 +249,7 @@ const products = [
   {
     id: 3,
     name: 'Smart Document Analyzer',
+    tagline: 'Transform your document workflow with AI-powered analysis and automation',
     description: 'An AI system that scans and extracts key insights from large volumes of documents (contracts, reports, invoices), automating document classification, summarization, and compliance checks to save time and reduce manual effort.',
     longDescription: 'The Smart Document Analyzer transforms document processing with AI-powered text recognition and data extraction. It automatically processes, categorizes, and extracts relevant information from contracts, reports, invoices, and other document types, saving countless hours of manual work. With advanced OCR and NLP capabilities, it ensures high accuracy in document classification, summarization, and compliance checks, significantly reducing manual effort and processing time while continuously improving performance.',
     icon: '/assets/img/th-1/service-icon-orange-3.svg',
@@ -267,7 +269,7 @@ const products = [
       'Improve document searchability',
       'Enhance data security'
     ],
-    image: '/assets/img/th-1/document-ai.jpg',
+    image: '/ourproducts/Smart Document Analyzer.jpg',
     useCases: [
       'Contract analysis',
       'Invoice processing',
@@ -279,6 +281,7 @@ const products = [
   {
     id: 4,
     name: 'Personalized Recommendation Engine',
+    tagline: 'Elevate user experience with AI-driven personalization at scale',
     description: 'Delivers hyper-personalized product, content, or service recommendations based on user behavior, preferences, and past interactions — ideal for e-commerce, media, and SaaS platforms.',
     longDescription: 'Our Personalized Recommendation Engine uses advanced machine learning algorithms to analyze user behavior, preferences, and past interactions. It delivers hyper-personalized recommendations that increase engagement, conversion rates, and customer satisfaction. The engine continuously learns from user interactions to refine its suggestions, creating a more personalized experience for each user. Perfect for e-commerce platforms, media services, and SaaS applications looking to enhance user experience and drive engagement.',
     icon: '/assets/img/th-1/service-icon-orange-4.svg',
@@ -298,7 +301,7 @@ const products = [
       'Reduce bounce rates',
       'Improve customer retention'
     ],
-    image: '/assets/img/th-1/recommendation-engine.jpg',
+    image: '/ourproducts/Personalized Recommendation Engine.jpg',
     useCases: [
       'E-commerce product recommendations',
       'Content personalization',
@@ -356,11 +359,10 @@ function ProductDetail() {
                     {product.tagline}
                   </span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
                   {product.name}
                 </h1>
-                <p className="text-xl text-gray-600">{product.tagline}</p>
-                <p className="text-gray-700">{product.longDescription}</p>
+                <p className="text-gray-700 mb-8">{product.longDescription}</p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Link 
                     href="/contact" 
@@ -370,14 +372,14 @@ function ProductDetail() {
                   </Link>
                   <Link 
                     href="/contact" 
-                    className="bg-white text-orange-600 px-8 py-4 rounded-xl font-medium text-center transition-all shadow-lg hover:bg-gray-50 hover:scale-105 hover:shadow-xl"
+                    className="bg-white text-orange-600 border border-gray-900 px-8 py-4 rounded-xl font-medium text-center transition-all shadow-lg hover:bg-gray-50 hover:scale-105 hover:shadow-xl"
                   >
                     Get a Free Demo
                   </Link>
                 </div>
                 <div className="flex items-center pt-4 text-sm">
-                  <div className="flex items-center bg-gradient-to-r from-orange-500 to-red-600 text-white px-4 py-2 rounded-full">
-                    <svg className="h-5 w-5 text-white mr-1.5" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="flex items-center bg-white text-gray-900 px-4 py-2 rounded-full border border-gray-900">
+                    <svg className="h-5 w-5 text-gray-900 mr-1.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     Fast Implementation
@@ -386,23 +388,21 @@ function ProductDetail() {
                 </div>
               </div>
               <div className="relative">
-                <div className="relative h-full w-full overflow-hidden rounded-xl bg-gradient-to-br from-orange-50 to-red-50 p-2">
-                  <div className="relative h-full w-full">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      fill
-                      className="object-contain transition-transform duration-500 hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      priority
-                    />
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl pointer-events-none"></div>
+                <div className="relative h-full w-full overflow-hidden rounded-xl">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={800}
+                    height={600}
+                    className="w-full h-auto object-contain transition-transform duration-500 hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
+                  />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border border-gray-100 hidden lg:block">
                   <div className="flex items-center">
-                    <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                      <svg className="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="bg-gray-100 p-3 rounded-lg mr-4">
+                      <svg className="w-8 h-8 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                     </div>
@@ -413,20 +413,6 @@ function ProductDetail() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Logos Section */}
-        <section className="py-12 bg-white border-t border-gray-100">
-          <div className="global-container">
-            <p className="text-center text-gray-500 text-sm font-medium mb-8">TRUSTED BY INNOVATIVE TEAMS</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="h-12 flex items-center justify-center">
-                  <div className="h-8 w-full bg-gray-200 rounded"></div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
