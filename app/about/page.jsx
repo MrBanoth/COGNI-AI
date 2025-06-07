@@ -190,9 +190,9 @@ function About() {
 				</section>
 				{/*...::: About Funfact Start :::... */}
 				{/*...::: Core Value Section Start :::... */}
-				<section id="core-value" className="mb-16 lg:mb-24 xl:mb-32">
+				<section id="core-value" className="mb-24 sm:mb-20 md:mb-24 lg:mb-24 xl:mb-32">
 					{/* Section Spacer */}
-					<div className="jos mx-5 rounded-[50px] bg-black px-[20px] pb-32 pt-20 sm:px-[50px] sm:pb-24 md:mx-[50px] lg:px-[100px] lg:pb-32 xl:pt-[130px] xl:pb-40">
+					<div className="jos mx-5 rounded-[50px] bg-black px-[20px] pb-20 pt-20 sm:px-[50px] sm:pb-20 md:mx-[50px] lg:px-[100px] lg:pb-32 xl:pt-[130px] xl:pb-40">
 						{/* Section Container */}
 						<div className="global-container">
 							{/* Section Content Block */}
