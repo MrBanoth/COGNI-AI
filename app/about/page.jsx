@@ -14,7 +14,7 @@ function About() {
 					<div className="breadcrumb-wrapper">
 						{/* Section Container */}
 						<div className="global-container">
-							<div className="breadcrumb-block pt-8 sm:pt-0">
+							<div className="breadcrumb-block pt-0 sm:pt-0">
 								<h1 className="breadcrumb-title text-2xl md:text-3xl font-bold">About Us</h1>
 								<ul className="breadcrumb-nav">
 									<li>
