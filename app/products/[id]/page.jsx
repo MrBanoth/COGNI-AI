@@ -239,11 +239,31 @@ const products = [
     ],
     image: '/ourproducts/Predictive Analytics Engine.jpg',
     useCases: [
-      'Demand forecasting',
-      'Customer churn prediction',
-      'Sales pipeline analysis',
-      'Risk management',
-      'Marketing campaign optimization'
+      { 
+        title: 'Demand forecasting', 
+        description: 'Accurate prediction of future product demand',
+        icon: '📈' 
+      },
+      { 
+        title: 'Customer churn prediction', 
+        description: 'Identify at-risk customers before they leave',
+        icon: '👥' 
+      },
+      { 
+        title: 'Sales pipeline analysis', 
+        description: 'Forecast sales trends and opportunities',
+        icon: '💼' 
+      },
+      { 
+        title: 'Risk management', 
+        description: 'Predict and mitigate potential business risks',
+        icon: '⚠️' 
+      },
+      { 
+        title: 'Marketing campaign optimization', 
+        description: 'Maximize ROI on marketing spend',
+        icon: '🎯' 
+      }
     ]
   },
   {
@@ -271,11 +291,31 @@ const products = [
     ],
     image: '/ourproducts/Smart Document Analyzer.jpg',
     useCases: [
-      'Contract analysis',
-      'Invoice processing',
-      'Legal document review',
-      'Research paper analysis',
-      'Regulatory compliance checking'
+      { 
+        title: 'Contract analysis', 
+        description: 'Extract key terms and clauses from contracts',
+        icon: '📝' 
+      },
+      { 
+        title: 'Invoice processing', 
+        description: 'Automate data extraction from invoices',
+        icon: '🧾' 
+      },
+      { 
+        title: 'Legal document review', 
+        description: 'Quickly analyze legal documents for key information',
+        icon: '⚖️' 
+      },
+      { 
+        title: 'Research paper analysis', 
+        description: 'Extract insights from academic papers',
+        icon: '📚' 
+      },
+      { 
+        title: 'Regulatory compliance', 
+        description: 'Ensure documents meet compliance requirements',
+        icon: '✅' 
+      }
     ]
   },
   {
@@ -303,11 +343,31 @@ const products = [
     ],
     image: '/ourproducts/Personalized Recommendation Engine.jpg',
     useCases: [
-      'E-commerce product recommendations',
-      'Content personalization',
-      'Media streaming suggestions',
-      'Personalized learning paths',
-      'Next-best-action recommendations'
+      { 
+        title: 'E-commerce recommendations', 
+        description: 'Personalized product suggestions for shoppers',
+        icon: '🛍️' 
+      },
+      { 
+        title: 'Content personalization', 
+        description: 'Tailor content to individual user preferences',
+        icon: '✨' 
+      },
+      { 
+        title: 'Media suggestions', 
+        description: 'Recommend movies, shows, and music users will love',
+        icon: '🎬' 
+      },
+      { 
+        title: 'Learning paths', 
+        description: 'Personalized educational content recommendations',
+        icon: '🎓' 
+      },
+      { 
+        title: 'Next-best-action', 
+        description: 'Guide users to their next best step',
+        icon: '➡️' 
+      }
     ]
   }
 ];
