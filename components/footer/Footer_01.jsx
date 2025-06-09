@@ -116,6 +116,14 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
+                  href='/products'
+                  className='text-gray-700 hover:text-colorOrangyRed transition-colors duration-300'
+                >
+                  Products
+                </Link>
+              </li>
+              <li>
+                <Link
                   href='/services'
                   className='text-gray-700 hover:text-colorOrangyRed transition-colors duration-300'
                 >
@@ -124,10 +132,18 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
+                  href='/careers'
+                  className='text-gray-700 hover:text-colorOrangyRed transition-colors duration-300'
+                >
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link
                   href='/contact'
                   className='text-gray-700 hover:text-colorOrangyRed transition-colors duration-300'
                 >
-                  Contact
+                  Contact Us
                 </Link>
               </li>
             </ul>

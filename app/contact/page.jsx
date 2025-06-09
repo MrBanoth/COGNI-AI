@@ -53,19 +53,19 @@ function Contact() {
 											<li className="flex flex-col gap-y-4 text-2xl font-bold">
 												Send us an email:
 												<Link
-													href="mailto:info@cogni.ai"
+													href="mailto:info@cogni-ai.com"
 													className="text-2xl font-normal leading-loose hover:text-colorOrangyRed lg:text-3xl"
 												>
-													info@mthemeus.com
+													info@cogni-ai.com
 												</Link>
 											</li>
 											<li className="flex flex-col gap-y-4 text-2xl font-bold">
 												Give us a call:
 												<Link
-													href="tel:+0123456789"
+													href="tel:+1234567890"
 													className="text-2xl font-normal leading-loose hover:text-colorOrangyRed lg:text-3xl"
 												>
-													+(012) 345 6789
+													+1 (234) 567-890
 												</Link>
 											</li>
 											<li className="flex flex-col gap-y-4 text-2xl font-bold">
